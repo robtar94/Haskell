@@ -23,7 +23,7 @@ ins4 = instrument DistortionGuitar r1
 
 jeden = (Modify (Phrase [Art $ Staccato 3.4 ])) ins1 :+: ins2 
 dwa = (Modify (Phrase [ Dyn $ Diminuendo 80]))  ins3 :+: ins4 :=: retro ins3
-trzy = (Modify (Phrase [ Tmp $ Accelerando  1.25])) ins4
+trzy = (Modify (Phrase [ Tmp $ Accelerando  1.5])) ins4
 
 utwor = jeden :+: dwa :+: trzy
 
