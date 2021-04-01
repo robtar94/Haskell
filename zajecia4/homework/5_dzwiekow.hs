@@ -1,7 +1,4 @@
 import Euterpea
-
-
-
 x1 = line [c 3 en, d 3 en, e 4 en, f 4 en, g 4 en]
 x2 = x1 :+: transpose 3 x1
 x3 = x2 :+: x2 :+:  invert x2 :+: retro x2
@@ -11,8 +8,6 @@ m1 = line [g 4 en, a 4 en, b 5 en, c 5 en, d 5 en]
 m2 = transpose 2 m1
 m3 = m2 :+: m2 :+: invert m2 :+: retro m2
 m4 = m3 :=: invert m3
-
-music1 :: Music Pitch
 music1 = x3 :+: x2 :+: x1 
 music2 = m3 :+: m2 :+: m1
 
@@ -28,7 +23,7 @@ ins4 = instrument DistortionGuitar r1
 
 jeden = (Modify (Phrase [Art $ Staccato 3.4 ])) ins1 :+: ins2 
 dwa = (Modify (Phrase [ Dyn $ Diminuendo 80]))  ins3 :+: ins4 :=: retro ins3
-trzy = (Modify (Phrase [ Tmp $ Accelerando  1.5])) ins4
+trzy = (Modify (Phrase [ Tmp $ Accelerando  1.25])) ins4
 
 utwor = jeden :+: dwa :+: trzy
 
