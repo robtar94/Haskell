@@ -23,10 +23,10 @@ ret = retro utwor
 inv = invert  utwor
 inv2 = invert ret
 french = instrument FrenchHorn $ inv
-english = instrument EnglishHorn $ inv2
-wiola = instrument Violin  $ inv
+organy = instrument HammondOrgan  $ inv2
+flet = instrument PanFlute $ inv
 
-graj =  utwor :+: french :+: english :+: wiola
+graj =  utwor :+: french :+: organy :+: flet
 
 
 
