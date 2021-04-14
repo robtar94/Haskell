@@ -1,0 +1,2 @@
+ 
+writeMidi "nazwa_pliku" zmienna muzyczna
