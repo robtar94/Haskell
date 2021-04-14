@@ -26,7 +26,7 @@ french = instrument FrenchHorn $ inv
 organy = instrument HammondOrgan  $ inv2
 flet = instrument PanFlute $ inv
 
-graj =  utwor :+: french :+: organy :+: flet
+graj =  utwor :=: french :=: flet
 
 
 
